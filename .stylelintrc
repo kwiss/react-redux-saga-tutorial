@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-prettier",
+    "stylelint-selector-bem-pattern",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "plugin/selector-bem-pattern": {
+      componentName: '[A-Z]+',
+      componentSelectors: {
+        initial: '^\\.{componentName}(?:-[a-z]+)?$',
+        combined: '^\\.combined-{componentName}-[a-z]+$',
+      },
+      utilitySelectors: '^\\.util-[a-z]+$',
+    }
+  }
+}

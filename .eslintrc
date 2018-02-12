@@ -1,0 +1,69 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [1, 120, 2, { "ignoreComments": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-multi-assign": 0,
+    "no-await-in-loop": 0,
+    "no-unused-vars": 0,
+    "class-methods-use-this": 0,
+    "no-debugger": 0,
+    "no-case-declarations": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "jsx-quotes": 1,
+    "linebreak-style": [2, "unix"],
+    "quotes": [2, "single"],
+    "react/display-name": 1,
+    "react/forbid-prop-types": 1,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-closing-bracket-location": 1,
+    "react/jsx-curly-spacing": 1,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-max-props-per-line": 1,
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-literals": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-sort-props": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-direct-mutation-state": 1,
+    "react/no-multi-comp": 1,
+    "react/no-set-state": 1,
+    "react/no-unknown-property": 1,
+    "react/prefer-es6-class": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/require-extension": 1,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 1,
+    "react/wrap-multilines": 1,
+    "semi": [2, "never"],
+    "caseSensitive": 0
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["react"]
+}
